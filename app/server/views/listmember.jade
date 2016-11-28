@@ -1,0 +1,22 @@
+block content
+	div.container(style='margin:auto')
+		table.table.table-bordered.table-striped
+			thead
+				tr
+					th(style='width:130px') First Name
+					th(style='width:130px') Last Name
+					th(style='width:180px') Block
+					th(style='width:200px') Address
+					th(style='width:180px') Email
+					th(style='width:150px') Phone Number
+					th(style='width:100px') Verify?
+			tbody
+			- for (var i = 0; i < mem.length; i++)
+				tr
+					td= mem[i].first_name
+					td= mem[i].last_name
+					td= mem[i].block
+					td= mem[i].address
+					td= mem[i].email
+					td= mem[i].phone
+					td= mem[i].verify
